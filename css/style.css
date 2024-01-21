@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'REM', sans-serif;
+}
+:root {
+    --primary: #EA580C;
+    --lightPrimary: rgba(234, 88, 12,.2);
+    --heading : #09090B;
+
+}
+
+
+
+
+
+.container{
+    width: 1320px;
+    margin: 0 auto ;
+}
+/* ===============navbar start ======================== */
+
+nav{
+    padding: 16px 0 ;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.navWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li{
+
+    display: inline-block;
+    margin-left: 37px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size:16px ;
+    font-weight: 500;
+    color:#000000;
+    transition: .4s;
+}
+nav ul li a:hover{
+    color:var(--primary);
+}
+
+nav .navBtn{
+    background: var(--primary);
+    text-decoration: none;
+    color:#FFFFFF;
+    padding: 8px 20px ;
+    border-radius: 33px;
+}
+.navIcon{
+    transform: rotate(180deg);
+    margin-right: 11px;
+}
+/* ===============navbar end ======================== */
+/* ===============banner start ======================== */
+
+#banner{
+    background: var(--lightPrimary);
+    padding-top: 36px;
+    padding-bottom: 158px;
+}
+#banner .banner_bellIcon{
+    width: 26px;
+    height: 26px;
+    background:var(--lightPrimary);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 26px;
+    
+
+}
+
+.bannerWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner_title h4{
+    font-size: 14px;
+    font-weight: 700;
+    color:#000000;
+}
+.banner_title{
+    border-radius: 33px;
+    width: 167px;
+    display: flex;
+    align-items: center;
+    gap:10px;
+
+    border: 1px solid var(--lightPrimary);
+}
+.banner_text_area h1{
+    font-size: 36px;
+    line-height: 45px;
+    font-weight: 700;
+    color:var(--heading);
+    width: 567px;
+    margin: 16px 0 ;
+}
+.banner_text_area p{
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    color:#71717A;;
+
+    width: 576px;
+}
+
+.bannerBtn{
+    text-decoration: none;
+    background: var(--primary);
+    color:#FFFFFF;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 30px ;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 60px;
+}
+
+.bannerItem{
+    display: flex;
+    align-items: center;
+    gap:39px;
+    background: rgba(234, 88, 12,.05); 
+    width: 424px;
+    padding: 31px 61px;
+    border-radius: 8px;
+    border:1px solid var(--lightPrimary)
+}
+
+.bannerItem h4{
+    font-size: 20px;
+    font-weight: 700;
+    color:var(--heading)
+}
+.bannerItem p{
+    font-size: 16px;
+    font-weight: 700;
+    color:#71717A;
+    width: 295px;
+    margin-top: 29px;
+}
+.bannerGearIcon{
+    font-size: 40px;
+}
+.bannerItemWrapper{
+    position: relative;
+}
+.bannerItemWrapper::after{
+    content: '';
+    width: 1px;
+    height: 88px;
+    background: var(--lightPrimary);
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    left: -16px;
+}
+.bannerItemBox{
+    margin-top: 39px;
+    display: flex;
+    justify-content: space-between;
+}
+/* ===============banner end ======================== */
